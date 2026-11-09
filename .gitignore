@@ -1,0 +1,7 @@
+# Archivos de base de datos (cada uno genera el suyo al probar)
+*.db
+*.sqlite3
+
+# Archivos de caché de Python
+__pycache__/
+*.py[cod]

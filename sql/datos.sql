@@ -16,4 +16,4 @@ insert into productos (nombre, codigo, descripcion, precio, stock, stock_minimo,
 insert into productos (nombre, codigo, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor) values ('Agua mineral 2L', 'P005', 'Agua mineral', 1300.00, 2, 10, 2, 2);
 insert into productos (nombre, codigo, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor) values ('Lavandina 2L', 'P006', 'Lavandina', 1800.00, 4, 6, 4, 3);
 insert into productos (nombre, codigo, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor) values ('Detergente 750ml', 'P007', 'Detergente', 2100.00, 25, 6, 4, 3);
-insert into productos (nombre, codigo, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor) values ('Jabon de tocador x3', 'P008', 'Jabon de tocador', 2600.00, 18, 5, 3, 3);
+insert into productos (nombre, codigo, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor) values ('Jabon de tocador x3', 'P008', 'Jabon de tocador', 2600.00, 18, 5, 4, 3);

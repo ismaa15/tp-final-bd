@@ -18,11 +18,11 @@ create table productos (
     nombre VARCHAR(50) NOT NULL UNIQUE,
     codigo VARCHAR(10) NOT NULL, 
     descripcion VARCHAR(200), 
-    precio DECIMAL(10,2) NOT NULL, CHECK (precio >= 0),
+    precio DECIMAL(10,2) NOT NULL CHECK (precio >= 0),
     stock INTEGER NOT NULL CHECK (stock >= 0),
     stock_minimo INTEGER NOT NULL DEFAULT 0, 
     id_categoria INTEGER NOT NULL,
     id_proveedor INTEGER NOT NULL,
     FOREIGN KEY (id_categoria) REFERENCES categorias(id_categoria) ON DELETE RESTRICT,
-    FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor ON DELETE RESTRICT)
+    FOREIGN KEY (id_proveedor) REFERENCES proveedores(id_proveedor) ON DELETE RESTRICT
 );

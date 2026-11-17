@@ -1,4 +1,4 @@
-#prueba de stock < stock_minimo
+-- prueba de stock < stock_minimo
 SELECT codigo, nombre, stock, stock_minimo 
 FROM productos 
 WHERE stock < stock_minimo;

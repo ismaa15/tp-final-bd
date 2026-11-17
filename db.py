@@ -31,11 +31,11 @@ def listar_proveedores():
 
 def listar_productos():
     with conectar() as con:
-        return con.execute (""""
+        return con.execute ("""
         SELECT p.id_producto,
           p.codigo,
           p.nombre,
-          c.nombre
+          c.nombre,
           pr.razon_social,
           p.precio,
           p.stock,
@@ -47,13 +47,13 @@ def listar_productos():
         ORDER BY p.codigo
         """).fetchall()
 
-def insertar_producto(codigo, nombre, precio, stock, stock_minimo, id_categoria, id_proveedor):
+def insertar_producto(codigo, nombre, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor):
     with conectar() as con:
         con.execute (
             """INSERT INTO productos
             (codigo, nombre, precio, stock, stock_minimo, id_categoria, id_proveedor)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
-          (codigo, nombre, precio, stock, stock_minimo, id_categoria, id_proveedor)
+          (codigo, nombre, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor)
         )
 
 def eliminar_producto(id_producto):

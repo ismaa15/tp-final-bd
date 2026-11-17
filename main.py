@@ -1,6 +1,6 @@
 import customtkinter as ctk
 from tkinter import ttk, messagebox
-# import db (Aquí importarás tu módulo de base de datos)
+import db
 
 # Configuración inicial de CustomTkinter
 ctk.set_appearance_mode("System")
@@ -37,7 +37,7 @@ class VentanaPrincipal(ctk.CTk):
 
         # Combobox para Categoría (Debe cargarse desde la DB)
         ctk.CTkLabel(self.frame_form, text="Categoría:").pack(anchor="w", padx=10)
-        self.combo_cat = ctk.CTkComboBox(self.frame_form, values=["Almacén", "Bebidas", "Limpieza"]) 
+        self.combo_cat = ctk.CTkComboBox(self.frame_form, values=["Almacén", "Bebidas", "Limpieza", "Perfumería"]) 
         self.combo_cat.pack(fill="x", padx=10, pady=(0, 10))
 
         # Botones de acción[cite: 5]

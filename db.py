@@ -51,7 +51,7 @@ def insertar_producto(codigo, nombre, descripcion, precio, stock, stock_minimo, 
     with conectar() as con:
         con.execute (
             """INSERT INTO productos
-            (codigo, nombre, precio, stock, stock_minimo, id_categoria, id_proveedor)
+            (codigo, descripcion, nombre, precio, stock, stock_minimo, id_categoria, id_proveedor)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?)""",
           (codigo, nombre, descripcion, precio, stock, stock_minimo, id_categoria, id_proveedor)
         )

@@ -1,6 +1,9 @@
 import sqlite3
 import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DB_PATH = os.path.join(BASE_DIR, "inventario.db")
+
 def conectar():
     con = sqlite3.connect("inventario.db")
     con.execute("PRAGMA foreign_keys = ON")  # Habilitar claves foráneas

@@ -17,7 +17,7 @@ sudo apt install python3-tk (Linux)
 ## En caso de no tener instalado Python
 ```winget install Python (Terminal de Powershell)```
 
-```[Python.org](https://www.python.org/downloads/) para cualquier sistema operativo```
+```([Python.org](https://www.python.org/downloads/)) para cualquier sistema operativo```
 
 ```python --version (Para verificar que fue instalado) ```
 

@@ -15,13 +15,16 @@ pip3 install customtkinter (Terminal de Powershell o MacOs)
 sudo apt install python3-tk (Linux)
 
 ## En caso de no tener instalado Python
-```
-winget install Python (Terminal de Powershell)
+```winget install Python (Terminal de Powershell)```
 
-[Python.org](https://www.python.org/downloads/) para cualquier sistema operativo
+```[Python.org](https://www.python.org/downloads/) para cualquier sistema operativo```
 
-python --version (Para verificar que fue instalado)
-```
+```python --version (Para verificar que fue instalado) ```
+
+>## **IMPORTANTE**
+En caso de que, al momento de ejecutar este proyecto exista el archivo <br>
+`inventario.db` eliminarlo, este mismo se genera automaticamente al <br>
+correr el programa
 >## **IMPORTANTE**
 En caso de que, al momento de ejecutar este proyecto exista el archivo <br>
 `inventario.db` eliminarlo, este mismo se genera automaticamente al <br>
